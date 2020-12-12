@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -12,25 +11,65 @@
 #include "esp_log.h"
 #include "esp_system.h"
 #include "semphr.h"
-
+SemaphoreHandle_t xSemaphore;
+TaskHandle_t gpio_on_handle;
 static const char *TAG = "main";
 
 #define GPIO_OUT_NUM0 0
 #define GPIO_PIN_SEL 1ULL<<GPIO_OUT_NUM0
 
 
+static void uGpioOnTask(void *arg){
+    for (;;){
+        int static state =0; 
+        if (xSemaphore != NULL){
+            if(xSemaphoreTake(xSemaphore, 10) ==pdTRUE){
+                gpio_set_level(GPIO_OUT_NUM0, (state++)%2);
+                vTaskDelay(1000 / portTICK_RATE_MS);
+                ESP_LOGI(TAG, "TaskOn is running");
+                xSemaphoreGive(xSemaphore);
+            }
+            else{
+                ESP_LOGI(TAG, "Another task has the Mutex");
+            }
+        }
+        else{
+            ESP_LOGI(TAG, "Mutex was not created");
+        }
 
+    }
+}
 
-
+static void uGpioOffTask(void *arg){
+    for(;;){
+        if(xSemaphore != NULL){
+            if(xSemaphoreGive(xSemaphore, 10) == pdTRUE){
+                gpio_set_level(GPIO_OUT_NUM0, 0);
+                xSemaphoreGive(xSemaphore);
+            }
+            else{
+                ESP_LOGI(TAG, "Another task has the Mutex");
+            }
+        }
+        else{
+            ESP_LOGI(TAG, "Mutex was not created");
+        }
+    }
+}
 
 void app_main(void){
     gpio_config_t io_conf; 
     io_conf.intr_type = GPIO_INTR_DISABLE;
     io_conf.mode = GPIO_MODE_OUTPUT;
-    io_conf.pin_bit_maks = GPIO_PIN_SEL;
+    io_conf.pin_bit_mask = GPIO_PIN_SEL;
     io_conf.pull_down_en = 0;
-    io_conf.pull_up_en = 0;
-    gpio_config(io_conf)
-    while(1)
-
+    io_conf.pull_up_en = 1;
+    gpio_config(&io_conf);
+    xSemaphore = xSemaphoreCreateMutex();
+    xTaskCreate(uGpioOnTask, "uGpioOnTask", 2048, NULL, 10, &gpio_on_handle);
+    // xTaskCreate(uGpioOffTask, "uGpioOffTask", 2048, NULL, 10, NULL);
+    ESP_LOGI(TAG, "Setup is finished");
+    while(1){
+        continue;
+    }
 }

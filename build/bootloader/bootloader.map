@@ -253,7 +253,7 @@ LOAD /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/x
 LOAD /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/libgcov.a
 END GROUP
 
-.text           0x0000000040100000     0x1b7d
+.text           0x0000000040100000     0x1b75
                 0x0000000040100000                _stext = .
                 0x0000000040100000                _text_start = ABSOLUTE (.)
                 0x0000000040100000                . = ALIGN (0x10)
@@ -446,268 +446,268 @@ END GROUP
                 0x0000000040100414       0x21 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
  *fill*         0x0000000040100435        0x3 
  .text.bootloader_main
-                0x0000000040100438       0x69 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
-                                         0x79 (size before relaxing)
- *fill*         0x00000000401004a1        0x3 
+                0x0000000040100438       0x61 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                                         0x75 (size before relaxing)
+ *fill*         0x0000000040100499        0x3 
  .text.bootloader_init
-                0x00000000401004a4       0x25 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+                0x000000004010049c       0x25 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
                                          0x29 (size before relaxing)
-                0x00000000401004a4                bootloader_init
- *fill*         0x00000000401004c9        0x3 
+                0x000000004010049c                bootloader_init
+ *fill*         0x00000000401004c1        0x3 
  .text.bootloader_utility_start_image
-                0x00000000401004cc       0x20 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                0x00000000401004c4       0x20 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
                                          0x24 (size before relaxing)
  .text.log_invalid_app_partition
-                0x00000000401004ec       0x4b /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                0x00000000401004e4       0x4b /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
                                          0x53 (size before relaxing)
- *fill*         0x0000000040100537        0x1 
+ *fill*         0x000000004010052f        0x1 
  .text.try_load_partition
-                0x0000000040100538       0x3d /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                0x0000000040100530       0x3d /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
                                          0x41 (size before relaxing)
- *fill*         0x0000000040100575        0x3 
+ *fill*         0x000000004010056d        0x3 
  .text.bootloader_utility_load_partition_table
-                0x0000000040100578      0x170 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                0x0000000040100570      0x170 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
                                         0x184 (size before relaxing)
-                0x0000000040100578                bootloader_utility_load_partition_table
+                0x0000000040100570                bootloader_utility_load_partition_table
  .text.bootloader_utility_get_selected_boot_partition
-                0x00000000401006e8      0x13c /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                0x00000000401006e0      0x13c /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
                                         0x14c (size before relaxing)
-                0x00000000401006e8                bootloader_utility_get_selected_boot_partition
+                0x00000000401006e0                bootloader_utility_get_selected_boot_partition
  .text.bootloader_utility_load_boot_image
-                0x0000000040100824       0xd6 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                0x000000004010081c       0xd6 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
                                          0xfa (size before relaxing)
-                0x0000000040100824                bootloader_utility_load_boot_image
- *fill*         0x00000000401008fa        0x2 
+                0x000000004010081c                bootloader_utility_load_boot_image
+ *fill*         0x00000000401008f2        0x2 
  .text.bootloader_utility_load_image
-                0x00000000401008fc       0x19 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
-                0x00000000401008fc                bootloader_utility_load_image
- *fill*         0x0000000040100915        0x3 
+                0x00000000401008f4       0x19 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+                0x00000000401008f4                bootloader_utility_load_image
+ *fill*         0x000000004010090d        0x3 
  .text.bootloader_common_ota_select_crc
-                0x0000000040100918       0x18 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
-                0x0000000040100918                bootloader_common_ota_select_crc
+                0x0000000040100910       0x18 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+                0x0000000040100910                bootloader_common_ota_select_crc
  .text.bootloader_common_ota_select_valid
-                0x0000000040100930       0x2c /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
-                0x0000000040100930                bootloader_common_ota_select_valid
+                0x0000000040100928       0x2c /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+                0x0000000040100928                bootloader_common_ota_select_valid
  .text.esp_partition_table_basic_verify
-                0x000000004010095c       0xd7 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
-                0x000000004010095c                esp_partition_table_basic_verify
- *fill*         0x0000000040100a33        0x1 
+                0x0000000040100954       0xd7 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+                0x0000000040100954                esp_partition_table_basic_verify
+ *fill*         0x0000000040100a2b        0x1 
  .text.should_map
-                0x0000000040100a34       0x15 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- *fill*         0x0000000040100a49        0x3 
+                0x0000000040100a2c       0x15 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ *fill*         0x0000000040100a41        0x3 
  .text.should_load
-                0x0000000040100a4c       0x19 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000040100a44       0x19 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0x1d (size before relaxing)
- *fill*         0x0000000040100a65        0x3 
+ *fill*         0x0000000040100a5d        0x3 
  .text.verify_image_header
-                0x0000000040100a68       0x7d /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000040100a60       0x7d /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0x85 (size before relaxing)
- *fill*         0x0000000040100ae5        0x3 
+ *fill*         0x0000000040100add        0x3 
  .text.process_segment_data
-                0x0000000040100ae8       0x89 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000040100ae0       0x89 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0x91 (size before relaxing)
- *fill*         0x0000000040100b71        0x3 
+ *fill*         0x0000000040100b69        0x3 
  .text.verify_checksum
-                0x0000000040100b74       0x9c /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000040100b6c       0x9c /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                          0xa0 (size before relaxing)
  .text.process_segment
-                0x0000000040100c10      0x10b /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000040100c08      0x10b /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                         0x117 (size before relaxing)
- *fill*         0x0000000040100d1b        0x1 
+ *fill*         0x0000000040100d13        0x1 
  .text.esp_image_load
-                0x0000000040100d1c      0x18d /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x0000000040100d14      0x18d /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                         0x1a5 (size before relaxing)
-                0x0000000040100d1c                esp_image_load
- *fill*         0x0000000040100ea9        0x3 
+                0x0000000040100d14                esp_image_load
+ *fill*         0x0000000040100ea1        0x3 
  .text.bootloader_flash_read_no_decrypt
-                0x0000000040100eac       0x15 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- *fill*         0x0000000040100ec1        0x3 
+                0x0000000040100ea4       0x15 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ *fill*         0x0000000040100eb9        0x3 
  .text.bootloader_mmap
-                0x0000000040100ec4       0xa6 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x0000000040100ebc       0xa6 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
                                          0xaa (size before relaxing)
-                0x0000000040100ec4                bootloader_mmap
- *fill*         0x0000000040100f6a        0x2 
+                0x0000000040100ebc                bootloader_mmap
+ *fill*         0x0000000040100f62        0x2 
  .text.bootloader_munmap
-                0x0000000040100f6c       0x23 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
-                0x0000000040100f6c                bootloader_munmap
- *fill*         0x0000000040100f8f        0x1 
+                0x0000000040100f64       0x23 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x0000000040100f64                bootloader_munmap
+ *fill*         0x0000000040100f87        0x1 
  .text.bootloader_flash_read
-                0x0000000040100f90       0x60 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+                0x0000000040100f88       0x60 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
                                          0x63 (size before relaxing)
-                0x0000000040100f90                bootloader_flash_read
- *fill*         0x0000000040100ff0        0x0 
+                0x0000000040100f88                bootloader_flash_read
+ *fill*         0x0000000040100fe8        0x0 
  .text.spi_user_cmd
-                0x0000000040100ff0       0x4d /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
-                0x0000000040100ff0                spi_user_cmd
- *fill*         0x000000004010103d        0x3 
+                0x0000000040100fe8       0x4d /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000040100fe8                spi_user_cmd
+ *fill*         0x0000000040101035        0x3 
  .text.special_flash_read_status
-                0x0000000040101040       0x39 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000040101038       0x39 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                          0x3d (size before relaxing)
-                0x0000000040101040                special_flash_read_status
- *fill*         0x0000000040101079        0x3 
+                0x0000000040101038                special_flash_read_status
+ *fill*         0x0000000040101071        0x3 
  .text.flash_gd25q32c_read_status
-                0x000000004010107c       0x33 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
- *fill*         0x00000000401010af        0x1 
+                0x0000000040101074       0x33 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+ *fill*         0x00000000401010a7        0x1 
  .text.special_flash_write_status
-                0x00000000401010b0       0x5c /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x00000000401010a8       0x5c /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                          0x60 (size before relaxing)
-                0x00000000401010b0                special_flash_write_status
+                0x00000000401010a8                special_flash_write_status
  .text.spi_flash_enable_qio_bit6
-                0x000000004010110c       0x17 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000040101104       0x17 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                          0x1b (size before relaxing)
- *fill*         0x0000000040101123        0x1 
+ *fill*         0x000000004010111b        0x1 
  .text.flash_gd25q32c_write_status
-                0x0000000040101124       0x30 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x000000004010111c       0x30 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
  .text.flash_gd25q32c_enable_QIO_mode
-                0x0000000040101154       0x3e /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x000000004010114c       0x3e /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                          0x46 (size before relaxing)
- *fill*         0x0000000040101192        0x2 
+ *fill*         0x000000004010118a        0x2 
  .text.en25q16x_read_sfdp
-                0x0000000040101194       0x43 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
-                0x0000000040101194                en25q16x_read_sfdp
- *fill*         0x00000000401011d7        0x1 
+                0x000000004010118c       0x43 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x000000004010118c                en25q16x_read_sfdp
+ *fill*         0x00000000401011cf        0x1 
  .text.spi_flash_get_id
-                0x00000000401011d8       0x26 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
-                0x00000000401011d8                spi_flash_get_id
- *fill*         0x00000000401011fe        0x2 
+                0x00000000401011d0       0x26 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x00000000401011d0                spi_flash_get_id
+ *fill*         0x00000000401011f6        0x2 
  .text.spi_flash_read_status
-                0x0000000040101200       0x28 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
-                0x0000000040101200                spi_flash_read_status
+                0x00000000401011f8       0x28 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x00000000401011f8                spi_flash_read_status
  .text.spi_flash_issi_enable_QIO_mode
-                0x0000000040101228       0x43 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000040101220       0x43 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                          0x4b (size before relaxing)
- *fill*         0x000000004010126b        0x1 
+ *fill*         0x0000000040101263        0x1 
  .text.special_flash_set_mode
-                0x000000004010126c       0x41 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000040101264       0x41 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                          0x45 (size before relaxing)
-                0x000000004010126c                special_flash_set_mode
- *fill*         0x00000000401012ad        0x3 
+                0x0000000040101264                special_flash_set_mode
+ *fill*         0x00000000401012a5        0x3 
  .text.en25q16x_write_volatile_status
-                0x00000000401012b0       0x4f /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x00000000401012a8       0x4f /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                          0x5b (size before relaxing)
-                0x00000000401012b0                en25q16x_write_volatile_status
- *fill*         0x00000000401012ff        0x1 
+                0x00000000401012a8                en25q16x_write_volatile_status
+ *fill*         0x00000000401012f7        0x1 
  .text.user_spi_flash_dio_to_qio_pre_init
-                0x0000000040101300       0x95 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x00000000401012f8       0x95 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                          0xa1 (size before relaxing)
-                0x0000000040101300                user_spi_flash_dio_to_qio_pre_init
- *fill*         0x0000000040101395        0x3 
+                0x00000000401012f8                user_spi_flash_dio_to_qio_pre_init
+ *fill*         0x000000004010138d        0x3 
  .text.esp_spi_flash_init
-                0x0000000040101398       0xb9 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+                0x0000000040101390       0xb9 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
                                          0xc1 (size before relaxing)
-                0x0000000040101398                esp_spi_flash_init
- *fill*         0x0000000040101451        0x3 
+                0x0000000040101390                esp_spi_flash_init
+ *fill*         0x0000000040101449        0x3 
  .text.Cache_Read_Disable_2
-                0x0000000040101454       0x34 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
-                0x0000000040101454                Cache_Read_Disable_2
+                0x000000004010144c       0x34 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x000000004010144c                Cache_Read_Disable_2
  .text.Cache_Read_Enable_2
-                0x0000000040101488       0x28 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
-                0x0000000040101488                Cache_Read_Enable_New
-                0x0000000040101488                Cache_Read_Enable_2
+                0x0000000040101480       0x28 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x0000000040101480                Cache_Read_Enable_New
+                0x0000000040101480                Cache_Read_Enable_2
  .text.spi_flash_get_id_raw
-                0x00000000401014b0       0x57 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
-                0x00000000401014b0                spi_flash_get_id_raw
- *fill*         0x0000000040101507        0x1 
+                0x00000000401014a8       0x57 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x00000000401014a8                spi_flash_get_id_raw
+ *fill*         0x00000000401014ff        0x1 
  .text.spi_flash_read_status_raw
-                0x0000000040101508       0x2f /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x0000000040101500       0x2f /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
                                          0x33 (size before relaxing)
-                0x0000000040101508                spi_flash_read_status_raw
- *fill*         0x0000000040101537        0x1 
+                0x0000000040101500                spi_flash_read_status_raw
+ *fill*         0x000000004010152f        0x1 
  .text.spi_flash_enable_qmode_raw
-                0x0000000040101538       0x33 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x0000000040101530       0x33 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
                                          0x37 (size before relaxing)
-                0x0000000040101538                spi_flash_enable_qmode_raw
- *fill*         0x000000004010156b        0x1 
+                0x0000000040101530                spi_flash_enable_qmode_raw
+ *fill*         0x0000000040101563        0x1 
  .text.spi_user_cmd_raw
-                0x000000004010156c      0x3df /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
-                0x000000004010156c                spi_user_cmd_raw
- *fill*         0x000000004010194b        0x1 
+                0x0000000040101564      0x3df /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x0000000040101564                spi_user_cmd_raw
+ *fill*         0x0000000040101943        0x1 
  .text.spi_flash_switch_to_qio_raw
-                0x000000004010194c       0x25 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
-                0x000000004010194c                spi_flash_switch_to_qio_raw
- *fill*         0x0000000040101971        0x3 
+                0x0000000040101944       0x25 /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+                0x0000000040101944                spi_flash_switch_to_qio_raw
+ *fill*         0x0000000040101969        0x3 
  .text.uart_putc
-                0x0000000040101974       0x1b /home/trex/esp/LAB2/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
- *fill*         0x000000004010198f        0x1 
+                0x000000004010196c       0x1b /home/trex/esp/LAB2/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+ *fill*         0x0000000040101987        0x1 
  .text.ets_putc
-                0x0000000040101990       0x27 /home/trex/esp/LAB2/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
-                0x0000000040101990                ets_putc
- *fill*         0x00000000401019b7        0x1 
+                0x0000000040101988       0x27 /home/trex/esp/LAB2/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+                0x0000000040101988                ets_putc
+ *fill*         0x00000000401019af        0x1 
  .text.ets_vprintf
-                0x00000000401019b8       0x1f /home/trex/esp/LAB2/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
-                0x00000000401019b8                ets_vprintf
- *fill*         0x00000000401019d7        0x1 
+                0x00000000401019b0       0x1f /home/trex/esp/LAB2/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+                0x00000000401019b0                ets_vprintf
+ *fill*         0x00000000401019cf        0x1 
  .text.crc32_le
-                0x00000000401019d8       0x31 /home/trex/esp/LAB2/build/bootloader/esp8266/libesp8266.a(crc.o)
-                0x00000000401019d8                crc32_le
- *fill*         0x0000000040101a09        0x3 
+                0x00000000401019d0       0x31 /home/trex/esp/LAB2/build/bootloader/esp8266/libesp8266.a(crc.o)
+                0x00000000401019d0                crc32_le
+ *fill*         0x0000000040101a01        0x3 
  .text.phy_reg_default
-                0x0000000040101a0c       0x36 /home/trex/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libcore.a(phy.o)
-                0x0000000040101a1c                phy_reg_default
- *fill*         0x0000000040101a42        0x0 
- *fill*         0x0000000040101a42        0x0 
- *fill*         0x0000000040101a42        0x0 
- *fill*         0x0000000040101a42        0x0 
- *fill*         0x0000000040101a42        0x0 
- *fill*         0x0000000040101a42        0x2 
+                0x0000000040101a04       0x36 /home/trex/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libcore.a(phy.o)
+                0x0000000040101a14                phy_reg_default
+ *fill*         0x0000000040101a3a        0x0 
+ *fill*         0x0000000040101a3a        0x0 
+ *fill*         0x0000000040101a3a        0x0 
+ *fill*         0x0000000040101a3a        0x0 
+ *fill*         0x0000000040101a3a        0x0 
+ *fill*         0x0000000040101a3a        0x2 
  .text.index_to_partition
-                0x0000000040101a44       0x4d /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- *fill*         0x0000000040101a91        0x0 
- *fill*         0x0000000040101a91        0x0 
- *fill*         0x0000000040101a91        0x0 
- *fill*         0x0000000040101a91        0x0 
- *fill*         0x0000000040101a91        0x0 
- *fill*         0x0000000040101a91        0x3 
+                0x0000000040101a3c       0x4d /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ *fill*         0x0000000040101a89        0x0 
+ *fill*         0x0000000040101a89        0x0 
+ *fill*         0x0000000040101a89        0x0 
+ *fill*         0x0000000040101a89        0x0 
+ *fill*         0x0000000040101a89        0x0 
+ *fill*         0x0000000040101a89        0x3 
  .text.verify_segment_header
-                0x0000000040101a94        0x4 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
- *fill*         0x0000000040101a98        0x0 
+                0x0000000040101a8c        0x4 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
+ *fill*         0x0000000040101a90        0x0 
  *(.iram1 .iram1.*)
- .iram1.0       0x0000000040101a98       0x18 /home/trex/esp/LAB2/build/bootloader/log/liblog.a(log.o)
-                0x0000000040101a98                esp_log_early_timestamp
- .iram1.1       0x0000000040101ab0       0x96 /home/trex/esp/LAB2/build/bootloader/log/liblog.a(log.o)
+ .iram1.0       0x0000000040101a90       0x18 /home/trex/esp/LAB2/build/bootloader/log/liblog.a(log.o)
+                0x0000000040101a90                esp_log_early_timestamp
+ .iram1.1       0x0000000040101aa8       0x96 /home/trex/esp/LAB2/build/bootloader/log/liblog.a(log.o)
                                          0xa1 (size before relaxing)
-                0x0000000040101ab0                esp_early_log_write
- *fill*         0x0000000040101b46        0x2 
- .iram1.0       0x0000000040101b48       0x35 /home/trex/esp/LAB2/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+                0x0000000040101aa8                esp_early_log_write
+ *fill*         0x0000000040101b3e        0x2 
+ .iram1.0       0x0000000040101b40       0x35 /home/trex/esp/LAB2/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
                                          0x39 (size before relaxing)
-                0x0000000040101b48                ets_printf
- *fill*         0x0000000040101b7d        0x0 
- *fill*         0x0000000040101b7d        0x0 
+                0x0000000040101b40                ets_printf
+ *fill*         0x0000000040101b75        0x0 
+ *fill*         0x0000000040101b75        0x0 
  *(.fini.literal)
  *(.fini)
  *(.gnu.version)
-                0x0000000040101b7d                _text_end = ABSOLUTE (.)
-                0x0000000040101b7d                _etext = .
+                0x0000000040101b75                _text_end = ABSOLUTE (.)
+                0x0000000040101b75                _etext = .
 
 .bss            0x000000003ffe8000      0x408
                 0x000000003ffe8000                . = ALIGN (0x8)
@@ -1020,19 +1020,19 @@ OUTPUT(/home/trex/esp/LAB2/build/bootloader/bootloader.elf elf32-xtensa-le)
  .debug_ranges  0x00000000000002d0       0x28 /home/trex/esp/LAB2/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
  .debug_ranges  0x00000000000002f8       0x20 /home/trex/esp/LAB2/build/bootloader/esp8266/libesp8266.a(crc.o)
 
-.debug_line     0x0000000000000000     0x8268
+.debug_line     0x0000000000000000     0x824e
  .debug_line    0x0000000000000000      0x579 /home/trex/esp/LAB2/build/bootloader/main/libmain.a(bootloader_start.o)
- .debug_line    0x0000000000000579      0x7ec /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
- .debug_line    0x0000000000000d65     0x139e /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
- .debug_line    0x0000000000002103      0x633 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
- .debug_line    0x0000000000002736      0x654 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- .debug_line    0x0000000000002d8a     0x12a5 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
- .debug_line    0x000000000000402f      0x8a4 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- .debug_line    0x00000000000048d3     0x1f4a /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
- .debug_line    0x000000000000681d      0xc2f /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
- .debug_line    0x000000000000744c      0x5bb /home/trex/esp/LAB2/build/bootloader/log/liblog.a(log.o)
- .debug_line    0x0000000000007a07      0x49c /home/trex/esp/LAB2/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
- .debug_line    0x0000000000007ea3      0x3c5 /home/trex/esp/LAB2/build/bootloader/esp8266/libesp8266.a(crc.o)
+ .debug_line    0x0000000000000579      0x7d2 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_init.o)
+ .debug_line    0x0000000000000d4b     0x139e /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_utility.o)
+ .debug_line    0x00000000000020e9      0x633 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_common.o)
+ .debug_line    0x000000000000271c      0x654 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ .debug_line    0x0000000000002d70     0x12a5 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+ .debug_line    0x0000000000004015      0x8a4 /home/trex/esp/LAB2/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ .debug_line    0x00000000000048b9     0x1f4a /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash.o)
+ .debug_line    0x0000000000006803      0xc2f /home/trex/esp/LAB2/build/bootloader/spi_flash/libspi_flash.a(spi_flash_raw.o)
+ .debug_line    0x0000000000007432      0x5bb /home/trex/esp/LAB2/build/bootloader/log/liblog.a(log.o)
+ .debug_line    0x00000000000079ed      0x49c /home/trex/esp/LAB2/build/bootloader/esp8266/libesp8266.a(ets_printf.o)
+ .debug_line    0x0000000000007e89      0x3c5 /home/trex/esp/LAB2/build/bootloader/esp8266/libesp8266.a(crc.o)
 
 .debug_str      0x0000000000000000     0x24f8
  .debug_str     0x0000000000000000      0x818 /home/trex/esp/LAB2/build/bootloader/main/libmain.a(bootloader_start.o)
