@@ -14,13 +14,12 @@
 #include "driver/hw_timer.h"
 SemaphoreHandle_t xSemaphore;
 TaskHandle_t gpio_on_handle;
-TaskHandle_t gpio_off_handle;
 static const char *TAG = "main";
 
 #define GPIO_OUT_NUM0 0
 #define GPIO_PIN_SEL 1ULL<<GPIO_OUT_NUM0
 
-/*
+
 void uHwTimerOnCallback(void *arg){
     int static state =0; 
     int time_after1;
@@ -28,23 +27,33 @@ void uHwTimerOnCallback(void *arg){
     time_after1 = hw_timer_get_count_data();
     ESP_LOGI(TAG, "Time after %d",time_after1 );
 }
-*/
+
 
 static void uGpioOnTask(void *arg){
-    //int state=0; 
-    ESP_LOGI(TAG, "h1_on");
-    TickType_t xtime1;
-    ESP_LOGI(TAG, "h1_on");
+    int time_now;
+    int time_after;
     for (;;){
+        
+        //int static state =0; 
+        
+        time_now = hw_timer_get_load_data();
         if (xSemaphore != NULL){
             if(xSemaphoreTake(xSemaphore, 10) ==pdTRUE){
-                xtime1 = xTaskGetTickCount();
-                gpio_set_level(GPIO_OUT_NUM0, 1);
-                ESP_LOGI(TAG, "ON");
-                while(pdMS_TO_TICKS(500)>(xTaskGetTickCount()- xtime1)){
-                    continue;
-                }
-                vTaskDelay(1000/portTICK_RATE_MS);
+                //gpio_set_level(GPIO_OUT_NUM0, (state++)%2);
+                //vTaskDelay(1000 / portTICK_RATE_MS);
+                hw_timer_init(uHwTimerOnCallback, NULL);
+                //hw_timer_set_load_data(1000/portTICK_RATE_MS);
+                //hw_timer_enable(true);
+                hw_timer_alarm_us(500, false);
+                ESP_LOGI(TAG, "TaskOn is running");
+                vTaskDelay(500/portTICK_RATE_MS);
+                //time_after = hw_timer_get_count_data();
+                //for(;;){
+                //}
+                //ESP_LOGI(TAG, "Time before: %d,Time after %d", time_now,time_after );
+                ESP_LOGI(TAG, "IS the timer  enabled? %d", hw_timer_get_enable());
+                //hw_timer_enable(false);
+                hw_timer_deinit();
                 xSemaphoreGive(xSemaphore);
             }
             else{
@@ -59,22 +68,10 @@ static void uGpioOnTask(void *arg){
 }
 
 static void uGpioOffTask(void *arg){
-    ESP_LOGI(TAG, "h1_off");
-    //int state=0; 
-    TickType_t xtime1;
-    ESP_LOGI(TAG, "h1_off");
-    for (;;){
-        if (xSemaphore != NULL){
-            if(xSemaphoreTake(xSemaphore, 10) ==pdTRUE){
-                xtime1 = xTaskGetTickCount();
+    for(;;){
+        if(xSemaphore != NULL){
+            if(xSemaphoreTake(xSemaphore, 10) == pdTRUE){
                 gpio_set_level(GPIO_OUT_NUM0, 0);
-                //ESP_LOGI(TAG, "")
-                ESP_LOGI(TAG, "Off");
-                while( pdMS_TO_TICKS(500)>xTaskGetTickCount()- xtime1){
-                    continue;
-                }
-                //ESP_LOGI(TAG, "")
-                vTaskDelay(1000/portTICK_RATE_MS);
                 xSemaphoreGive(xSemaphore);
             }
             else{
@@ -84,7 +81,6 @@ static void uGpioOffTask(void *arg){
         else{
             ESP_LOGI(TAG, "Mutex was not created");
         }
-
     }
 }
 
@@ -94,12 +90,13 @@ void app_main(void){
     io_conf.mode = GPIO_MODE_OUTPUT;
     io_conf.pin_bit_mask = GPIO_PIN_SEL;
     io_conf.pull_down_en = 0;
-    io_conf.pull_up_en = 0;
+    io_conf.pull_up_en = 1;
     gpio_config(&io_conf);
     xSemaphore = xSemaphoreCreateMutex();
     xTaskCreate(uGpioOnTask, "uGpioOnTask", 2048, NULL, 10, &gpio_on_handle);
-    xTaskCreate(uGpioOffTask, "uGpioOffTask", 2048, NULL, 10, &gpio_off_handle);
+    // xTaskCreate(uGpioOffTask, "uGpioOffTask", 2048, NULL, 10, NULL);
     ESP_LOGI(TAG, "Setup is finished");
-    vTaskStartScheduler();
-    for(;;);
+    while(1){
+        continue;
+    }
 }
