@@ -94,9 +94,37 @@ void app_main(void){
     io_conf.pull_up_en = 0;
     gpio_config(&io_conf);
     xSemaphore = xSemaphoreCreateMutex();
-    xTaskCreate(printStatus, "printStatus", 2048, NULL, 11, &print_status_handle);
-    xTaskCreate(uGpioOnTask, "uGpioOnTask", 2048, NULL, 10, &gpio_on_handle);
+    // Priority Inheritance Manage mutex- combinations 
+    // xTaskCreate(printStatus, "printStatus", 2048, NULL, 9, &print_status_handle    );
+    // xTaskCreate(uGpioOnTask, "uGpioOnTask", 2048, NULL, 11, &gpio_on_handle);
+    // xTaskCreate(uGpioOffTask, "uGpioOffTask", 2048, NULL, 10, &gpio_off_handle);
+
+
+    // xTaskCreate(printStatus, "printStatus", 2048, NULL, 9, &print_status_handle    );
+    // xTaskCreate(uGpioOnTask, "uGpioOnTask", 2048, NULL, 10, &gpio_on_handle);
+    // xTaskCreate(uGpioOffTask, "uGpioOffTask", 2048, NULL,11, &gpio_off_handle);
+
+
+
+    // xTaskCreate(printStatus, "printStatus", 2048, NULL, 10, &print_status_handle    );
+    // xTaskCreate(uGpioOnTask, "uGpioOnTask", 2048, NULL, 9, &gpio_on_handle);
+    // xTaskCreate(uGpioOffTask, "uGpioOffTask", 2048, NULL, 11, &gpio_off_handle);
+
+
+    // xTaskCreate(printStatus, "printStatus", 2048, NULL, 11, &print_status_handle    );
+    // xTaskCreate(uGpioOnTask, "uGpioOnTask", 2048, NULL, 9, &gpio_on_handle);
+    // xTaskCreate(uGpioOffTask, "uGpioOffTask", 2048, NULL, 10, &gpio_off_handle);
+
+    // xTaskCreate(printStatus, "printStatus", 2048, NULL, 11, &print_status_handle    );
+    // xTaskCreate(uGpioOnTask, "uGpioOnTask", 2048, NULL, 10, &gpio_on_handle);
+    // xTaskCreate(uGpioOffTask, "uGpioOffTask", 2048, NULL, 9, &gpio_off_handle);
+    
+    xTaskCreate(printStatus, "printStatus", 2048, NULL, 10, &print_status_handle    );
+    xTaskCreate(uGpioOnTask, "uGpioOnTask", 2048, NULL, 11, &gpio_on_handle);
     xTaskCreate(uGpioOffTask, "uGpioOffTask", 2048, NULL, 9, &gpio_off_handle);
+
+ 
+
     ESP_LOGI(TAG, "Setup is finished");
     for(;;){
         vTaskDelay(pdMS_TO_TICKS(10));
