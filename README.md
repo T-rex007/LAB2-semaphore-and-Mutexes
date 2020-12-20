@@ -20,7 +20,7 @@ For each exercise, ensure that the output file, the appropriately commented sour
 </ol>
 
 ## Lab 2 Part 2 Part A Results
-Demontrated results for round robin scheduling where  all taks have the same priority
+Demontrated results for round robin scheduling where  all tasks have the same priority
 
 <img src="image_evidence/lab2_part2_A.png" alt="lab results" width="1000" height="600">
 
