@@ -1,7 +1,7 @@
-main.o: /home/trex/esp/LAB2/main/main.c \
+main.o: /home/trex/esp/LAB2_PART3/main/main.c \
  /home/trex/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h \
  /home/trex/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h \
- /home/trex/esp/LAB2/build/include/sdkconfig.h \
+ /home/trex/esp/LAB2_PART3/build/include/sdkconfig.h \
  /home/trex/esp/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h \
  /home/trex/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp8266/eagle_soc.h \
  /home/trex/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/soc.h \
@@ -41,13 +41,15 @@ main.o: /home/trex/esp/LAB2/main/main.c \
  /home/trex/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_idf_version.h \
  /home/trex/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/semphr.h \
  /home/trex/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h \
- /home/trex/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/hw_timer.h
+ /home/trex/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/hw_timer.h \
+ /home/trex/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_sleep.h \
+ /home/trex/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/gpio.h
 
 /home/trex/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/FreeRTOS.h:
 
 /home/trex/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos/FreeRTOSConfig.h:
 
-/home/trex/esp/LAB2/build/include/sdkconfig.h:
+/home/trex/esp/LAB2_PART3/build/include/sdkconfig.h:
 
 /home/trex/esp/ESP8266_RTOS_SDK/components/esp8266/include/rom/ets_sys.h:
 
@@ -128,4 +130,8 @@ main.o: /home/trex/esp/LAB2/main/main.c \
 /home/trex/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h:
 
 /home/trex/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/hw_timer.h:
-/home/trex/esp/LAB2/main/./main.c:
+
+/home/trex/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_sleep.h:
+
+/home/trex/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/gpio.h:
+/home/trex/esp/LAB2_PART3/main/./main.c:

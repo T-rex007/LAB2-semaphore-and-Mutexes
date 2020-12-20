@@ -12,6 +12,7 @@
 #include "esp_system.h"
 #include "semphr.h"
 #include "driver/hw_timer.h"
+#include "esp_sleep.h"
 SemaphoreHandle_t xSemaphore;
 TaskHandle_t gpio_on_handle;
 TaskHandle_t gpio_off_handle;
@@ -85,6 +86,10 @@ static void printStatus( void *arg){
 }
 
 
+void vApplicationIdleHook( void ){
+    esp_sleep_enable_timer_wakeup(500); 
+    esp_light_sleep_start();
+}
 void app_main(void){
     gpio_config_t io_conf; 
     io_conf.intr_type = GPIO_INTR_DISABLE;
