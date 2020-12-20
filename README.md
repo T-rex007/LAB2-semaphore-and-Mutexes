@@ -1,4 +1,4 @@
-# ECNG 3006 LAB 2
+# ECNG 3006 LAB 2 Part 2A round Robin scheduling
 
 FreeRTOS Port and App Configuration for ESP8266[edit]
 FreeRTOS specifies that port-specific files must be defined for the target platform, and that an application-specific configuration file should be included in each new project. For any project that you have already created, identify the following files and how changes in any one will affect the FreeRTOS configuration:
