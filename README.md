@@ -21,5 +21,5 @@ For each exercise, ensure that the output file, the appropriately commented sour
 
 ## Lab 2 Part 2 Results
 
-<img src="image_evidence/lab2_part2_A.png" alt="lab results" width="500" height="600">
+<img src="image_evidence/lab2_part2_A.png" alt="lab results" width="1000" height="600">
 
