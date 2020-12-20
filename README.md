@@ -1,4 +1,4 @@
-# ECNG 3006 LAB 2
+# ECNG 3006 LAB 2 Priority Inheritance
 
 FreeRTOS Port and App Configuration for ESP8266[edit]
 FreeRTOS specifies that port-specific files must be defined for the target platform, and that an application-specific configuration file should be included in each new project. For any project that you have already created, identify the following files and how changes in any one will affect the FreeRTOS configuration:
@@ -21,7 +21,7 @@ For each exercise, ensure that the output file, the appropriately commented sour
 
 
 ## Lab 2 Part 2 Part B Results
-Demontrated results for round robin scheduling where  all tasks have the same priority
+Demontrated results for priority inheritance with the Assigned priority varied.
 
 <img src="image_evidence/lab2 part2a_91011.png" alt="lab results" width="1000" height="600">
 <br>
