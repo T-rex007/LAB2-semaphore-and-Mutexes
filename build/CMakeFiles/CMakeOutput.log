@@ -1,5 +1,5 @@
 The target system is: Generic -  - 
-The host system is: Linux - 5.4.0-56-generic - x86_64
+The host system is: Linux - 5.4.0-58-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/xtensa-lx106-elf-gcc 
 Build flags: -mlongcalls;-Wno-frame-address
@@ -35,8 +35,8 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/trex/esp/LAB2/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_8951f && [1/2] Building C object CMakeFiles/cmTC_8951f.dir/testCCompiler.c.obj
-[2/2] Linking C executable cmTC_8951f
+Run Build Command(s):/usr/bin/ninja cmTC_0f834 && [1/2] Building C object CMakeFiles/cmTC_0f834.dir/testCCompiler.c.obj
+[2/2] Linking C executable cmTC_0f834
 /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/bin/ld: warning: cannot find entry symbol _start; not setting start address
 
 
@@ -44,15 +44,15 @@ Run Build Command(s):/usr/bin/ninja cmTC_8951f && [1/2] Building C object CMakeF
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/trex/esp/LAB2/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_baabb && [1/2] Building C object CMakeFiles/cmTC_baabb.dir/CMakeCCompilerABI.c.obj
+Run Build Command(s):/usr/bin/ninja cmTC_5b686 && [1/2] Building C object CMakeFiles/cmTC_5b686.dir/CMakeCCompilerABI.c.obj
 Using built-in specs.
 COLLECT_GCC=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/xtensa-lx106-elf-gcc
 Target: xtensa-lx106-elf
 Configured with: /builds/idf/crosstool-NG/.build/xtensa-lx106-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-lx106-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-lx106-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-lx106-elf/xtensa-lx106-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-lx106-elf/xtensa-lx106-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2020r3-49-gd5524c1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-lx106-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-lx106-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-lx106-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-lx106-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-libstdcxx-time=yes
 Thread model: posix
 gcc version 8.4.0 (crosstool-NG esp-2020r3-49-gd5524c1) 
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_baabb.dir/CMakeCCompilerABI.c.obj' '-c'
- /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/cc1 -quiet -v -iprefix /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/ /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mlongcalls -auxbase-strip CMakeFiles/cmTC_baabb.dir/CMakeCCompilerABI.c.obj -Wno-frame-address -version -o /tmp/ccbPQKf7.s
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_5b686.dir/CMakeCCompilerABI.c.obj' '-c'
+ /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/cc1 -quiet -v -iprefix /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/ /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mlongcalls -auxbase-strip CMakeFiles/cmTC_5b686.dir/CMakeCCompilerABI.c.obj -Wno-frame-address -version -o /tmp/ccWlU6SE.s
 GNU C17 (crosstool-NG esp-2020r3-49-gd5524c1) version 8.4.0 (xtensa-lx106-elf)
 	compiled by GNU C version 4.9.2, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
 
@@ -73,12 +73,12 @@ GNU C17 (crosstool-NG esp-2020r3-49-gd5524c1) version 8.4.0 (xtensa-lx106-elf)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 48e58fa3e6eb2de9fad439857fcdf42a
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_baabb.dir/CMakeCCompilerABI.c.obj' '-c'
- /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/bin/as --traditional-format --longcalls -o CMakeFiles/cmTC_baabb.dir/CMakeCCompilerABI.c.obj /tmp/ccbPQKf7.s
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_5b686.dir/CMakeCCompilerABI.c.obj' '-c'
+ /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/bin/as --traditional-format --longcalls -o CMakeFiles/cmTC_5b686.dir/CMakeCCompilerABI.c.obj /tmp/ccWlU6SE.s
 COMPILER_PATH=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/bin/
 LIBRARY_PATH=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_baabb.dir/CMakeCCompilerABI.c.obj' '-c'
-[2/2] Linking C executable cmTC_baabb
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_5b686.dir/CMakeCCompilerABI.c.obj' '-c'
+[2/2] Linking C executable cmTC_5b686
 Using built-in specs.
 COLLECT_GCC=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/xtensa-lx106-elf-gcc
 COLLECT_LTO_WRAPPER=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/lto-wrapper
@@ -88,10 +88,10 @@ Thread model: posix
 gcc version 8.4.0 (crosstool-NG esp-2020r3-49-gd5524c1) 
 COMPILER_PATH=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/bin/
 LIBRARY_PATH=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-nostdlib' '-v' '-o' 'cmTC_baabb'
- /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/collect2 -plugin /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/liblto_plugin.so -plugin-opt=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYlG6Ws.res -o cmTC_baabb -L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0 -L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc -L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib --gc-sections CMakeFiles/cmTC_baabb.dir/CMakeCCompilerABI.c.obj
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-nostdlib' '-v' '-o' 'cmTC_5b686'
+ /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/collect2 -plugin /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/liblto_plugin.so -plugin-opt=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwioGFX.res -o cmTC_5b686 -L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0 -L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc -L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib --gc-sections CMakeFiles/cmTC_5b686.dir/CMakeCCompilerABI.c.obj
 /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/bin/ld: warning: cannot find entry symbol _start; not setting start address
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-nostdlib' '-v' '-o' 'cmTC_baabb'
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-nostdlib' '-v' '-o' 'cmTC_5b686'
 
 
 
@@ -114,15 +114,15 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(xtensa-lx106-elf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/trex/esp/LAB2/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/ninja cmTC_baabb && [1/2] Building C object CMakeFiles/cmTC_baabb.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [Run Build Command(s):/usr/bin/ninja cmTC_5b686 && [1/2] Building C object CMakeFiles/cmTC_5b686.dir/CMakeCCompilerABI.c.obj]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/xtensa-lx106-elf-gcc]
   ignore line: [Target: xtensa-lx106-elf]
   ignore line: [Configured with: /builds/idf/crosstool-NG/.build/xtensa-lx106-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-lx106-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-lx106-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-lx106-elf/xtensa-lx106-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-lx106-elf/xtensa-lx106-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2020r3-49-gd5524c1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-lx106-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-lx106-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-lx106-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-lx106-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-libstdcxx-time=yes]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 8.4.0 (crosstool-NG esp-2020r3-49-gd5524c1) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_baabb.dir/CMakeCCompilerABI.c.obj' '-c']
-  ignore line: [ /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/cc1 -quiet -v -iprefix /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/ /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mlongcalls -auxbase-strip CMakeFiles/cmTC_baabb.dir/CMakeCCompilerABI.c.obj -Wno-frame-address -version -o /tmp/ccbPQKf7.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_5b686.dir/CMakeCCompilerABI.c.obj' '-c']
+  ignore line: [ /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/cc1 -quiet -v -iprefix /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/ /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mlongcalls -auxbase-strip CMakeFiles/cmTC_5b686.dir/CMakeCCompilerABI.c.obj -Wno-frame-address -version -o /tmp/ccWlU6SE.s]
   ignore line: [GNU C17 (crosstool-NG esp-2020r3-49-gd5524c1) version 8.4.0 (xtensa-lx106-elf)]
   ignore line: [	compiled by GNU C version 4.9.2  GMP version 6.1.2  MPFR version 4.0.1  MPC version 1.1.0  isl version isl-0.19-GMP]
   ignore line: []
@@ -143,12 +143,12 @@ Parsed C implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 48e58fa3e6eb2de9fad439857fcdf42a]
-  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_baabb.dir/CMakeCCompilerABI.c.obj' '-c']
-  ignore line: [ /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/bin/as --traditional-format --longcalls -o CMakeFiles/cmTC_baabb.dir/CMakeCCompilerABI.c.obj /tmp/ccbPQKf7.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_5b686.dir/CMakeCCompilerABI.c.obj' '-c']
+  ignore line: [ /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/bin/as --traditional-format --longcalls -o CMakeFiles/cmTC_5b686.dir/CMakeCCompilerABI.c.obj /tmp/ccWlU6SE.s]
   ignore line: [COMPILER_PATH=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/bin/]
   ignore line: [LIBRARY_PATH=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_baabb.dir/CMakeCCompilerABI.c.obj' '-c']
-  ignore line: [[2/2] Linking C executable cmTC_baabb]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_5b686.dir/CMakeCCompilerABI.c.obj' '-c']
+  ignore line: [[2/2] Linking C executable cmTC_5b686]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/xtensa-lx106-elf-gcc]
   ignore line: [COLLECT_LTO_WRAPPER=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/lto-wrapper]
@@ -158,20 +158,20 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 8.4.0 (crosstool-NG esp-2020r3-49-gd5524c1) ]
   ignore line: [COMPILER_PATH=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/bin/]
   ignore line: [LIBRARY_PATH=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-nostdlib' '-v' '-o' 'cmTC_baabb']
-  link line: [ /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/collect2 -plugin /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/liblto_plugin.so -plugin-opt=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYlG6Ws.res -o cmTC_baabb -L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0 -L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc -L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib --gc-sections CMakeFiles/cmTC_baabb.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-nostdlib' '-v' '-o' 'cmTC_5b686']
+  link line: [ /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/collect2 -plugin /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/liblto_plugin.so -plugin-opt=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwioGFX.res -o cmTC_5b686 -L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0 -L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc -L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib --gc-sections CMakeFiles/cmTC_5b686.dir/CMakeCCompilerABI.c.obj]
     arg [/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccYlG6Ws.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccwioGFX.res] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_baabb] ==> ignore
+    arg [cmTC_5b686] ==> ignore
     arg [-L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0] ==> dir [/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0]
     arg [-L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc] ==> dir [/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc]
     arg [-L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib] ==> dir [/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib]
     arg [--gc-sections] ==> ignore
-    arg [CMakeFiles/cmTC_baabb.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [CMakeFiles/cmTC_5b686.dir/CMakeCCompilerABI.c.obj] ==> ignore
   collapse library dir [/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0] ==> [/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/lib/gcc/xtensa-lx106-elf/8.4.0]
   collapse library dir [/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc] ==> [/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/lib/gcc]
   collapse library dir [/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib] ==> [/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/xtensa-lx106-elf/lib]
@@ -183,8 +183,8 @@ Parsed C implicit link information from above output:
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/trex/esp/LAB2/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_e9514 && [1/2] Building CXX object CMakeFiles/cmTC_e9514.dir/testCXXCompiler.cxx.obj
-[2/2] Linking CXX executable cmTC_e9514
+Run Build Command(s):/usr/bin/ninja cmTC_b2b7b && [1/2] Building CXX object CMakeFiles/cmTC_b2b7b.dir/testCXXCompiler.cxx.obj
+[2/2] Linking CXX executable cmTC_b2b7b
 /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/bin/ld: warning: cannot find entry symbol _start; not setting start address
 
 
@@ -192,15 +192,15 @@ Run Build Command(s):/usr/bin/ninja cmTC_e9514 && [1/2] Building CXX object CMak
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/trex/esp/LAB2/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_727bd && [1/2] Building CXX object CMakeFiles/cmTC_727bd.dir/CMakeCXXCompilerABI.cpp.obj
+Run Build Command(s):/usr/bin/ninja cmTC_7d6cc && [1/2] Building CXX object CMakeFiles/cmTC_7d6cc.dir/CMakeCXXCompilerABI.cpp.obj
 Using built-in specs.
 COLLECT_GCC=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++
 Target: xtensa-lx106-elf
 Configured with: /builds/idf/crosstool-NG/.build/xtensa-lx106-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-lx106-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-lx106-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-lx106-elf/xtensa-lx106-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-lx106-elf/xtensa-lx106-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2020r3-49-gd5524c1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-lx106-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-lx106-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-lx106-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-lx106-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-libstdcxx-time=yes
 Thread model: posix
 gcc version 8.4.0 (crosstool-NG esp-2020r3-49-gd5524c1) 
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_727bd.dir/CMakeCXXCompilerABI.cpp.obj' '-c'
- /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/cc1plus -quiet -v -iprefix /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/ /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mlongcalls -auxbase-strip CMakeFiles/cmTC_727bd.dir/CMakeCXXCompilerABI.cpp.obj -Wno-frame-address -version -o /tmp/ccMCUfPK.s
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_7d6cc.dir/CMakeCXXCompilerABI.cpp.obj' '-c'
+ /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/cc1plus -quiet -v -iprefix /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/ /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mlongcalls -auxbase-strip CMakeFiles/cmTC_7d6cc.dir/CMakeCXXCompilerABI.cpp.obj -Wno-frame-address -version -o /tmp/ccxPz3I6.s
 GNU C++14 (crosstool-NG esp-2020r3-49-gd5524c1) version 8.4.0 (xtensa-lx106-elf)
 	compiled by GNU C version 4.9.2, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
 
@@ -227,12 +227,12 @@ GNU C++14 (crosstool-NG esp-2020r3-49-gd5524c1) version 8.4.0 (xtensa-lx106-elf)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 6a42b2f4729ac0ea49ccdcd6bf20e2e4
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_727bd.dir/CMakeCXXCompilerABI.cpp.obj' '-c'
- /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/bin/as --traditional-format --longcalls -o CMakeFiles/cmTC_727bd.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccMCUfPK.s
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_7d6cc.dir/CMakeCXXCompilerABI.cpp.obj' '-c'
+ /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/bin/as --traditional-format --longcalls -o CMakeFiles/cmTC_7d6cc.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccxPz3I6.s
 COMPILER_PATH=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/bin/
 LIBRARY_PATH=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_727bd.dir/CMakeCXXCompilerABI.cpp.obj' '-c'
-[2/2] Linking CXX executable cmTC_727bd
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_7d6cc.dir/CMakeCXXCompilerABI.cpp.obj' '-c'
+[2/2] Linking CXX executable cmTC_7d6cc
 Using built-in specs.
 COLLECT_GCC=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++
 COLLECT_LTO_WRAPPER=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/lto-wrapper
@@ -242,10 +242,10 @@ Thread model: posix
 gcc version 8.4.0 (crosstool-NG esp-2020r3-49-gd5524c1) 
 COMPILER_PATH=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/bin/
 LIBRARY_PATH=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-nostdlib' '-v' '-o' 'cmTC_727bd'
- /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/collect2 -plugin /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/liblto_plugin.so -plugin-opt=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYh6q52.res -o cmTC_727bd -L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0 -L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc -L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib --gc-sections CMakeFiles/cmTC_727bd.dir/CMakeCXXCompilerABI.cpp.obj
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-nostdlib' '-v' '-o' 'cmTC_7d6cc'
+ /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/collect2 -plugin /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/liblto_plugin.so -plugin-opt=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc7YXLsp.res -o cmTC_7d6cc -L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0 -L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc -L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib --gc-sections CMakeFiles/cmTC_7d6cc.dir/CMakeCXXCompilerABI.cpp.obj
 /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/bin/ld: warning: cannot find entry symbol _start; not setting start address
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-nostdlib' '-v' '-o' 'cmTC_727bd'
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-nostdlib' '-v' '-o' 'cmTC_7d6cc'
 
 
 
@@ -274,15 +274,15 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(xtensa-lx106-elf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/trex/esp/LAB2/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/ninja cmTC_727bd && [1/2] Building CXX object CMakeFiles/cmTC_727bd.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [Run Build Command(s):/usr/bin/ninja cmTC_7d6cc && [1/2] Building CXX object CMakeFiles/cmTC_7d6cc.dir/CMakeCXXCompilerABI.cpp.obj]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++]
   ignore line: [Target: xtensa-lx106-elf]
   ignore line: [Configured with: /builds/idf/crosstool-NG/.build/xtensa-lx106-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=xtensa-lx106-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-lx106-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-lx106-elf/xtensa-lx106-elf --with-headers=/builds/idf/crosstool-NG/builds/xtensa-lx106-elf/xtensa-lx106-elf/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-2020r3-49-gd5524c1' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --with-gmp=/builds/idf/crosstool-NG/.build/xtensa-lx106-elf/buildtools --with-mpfr=/builds/idf/crosstool-NG/.build/xtensa-lx106-elf/buildtools --with-mpc=/builds/idf/crosstool-NG/.build/xtensa-lx106-elf/buildtools --with-isl=/builds/idf/crosstool-NG/.build/xtensa-lx106-elf/buildtools --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-libstdcxx-time=yes]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 8.4.0 (crosstool-NG esp-2020r3-49-gd5524c1) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_727bd.dir/CMakeCXXCompilerABI.cpp.obj' '-c']
-  ignore line: [ /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/cc1plus -quiet -v -iprefix /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/ /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mlongcalls -auxbase-strip CMakeFiles/cmTC_727bd.dir/CMakeCXXCompilerABI.cpp.obj -Wno-frame-address -version -o /tmp/ccMCUfPK.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_7d6cc.dir/CMakeCXXCompilerABI.cpp.obj' '-c']
+  ignore line: [ /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/cc1plus -quiet -v -iprefix /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/ /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mlongcalls -auxbase-strip CMakeFiles/cmTC_7d6cc.dir/CMakeCXXCompilerABI.cpp.obj -Wno-frame-address -version -o /tmp/ccxPz3I6.s]
   ignore line: [GNU C++14 (crosstool-NG esp-2020r3-49-gd5524c1) version 8.4.0 (xtensa-lx106-elf)]
   ignore line: [	compiled by GNU C version 4.9.2  GMP version 6.1.2  MPFR version 4.0.1  MPC version 1.1.0  isl version isl-0.19-GMP]
   ignore line: []
@@ -309,12 +309,12 @@ Parsed CXX implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 6a42b2f4729ac0ea49ccdcd6bf20e2e4]
-  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_727bd.dir/CMakeCXXCompilerABI.cpp.obj' '-c']
-  ignore line: [ /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/bin/as --traditional-format --longcalls -o CMakeFiles/cmTC_727bd.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccMCUfPK.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_7d6cc.dir/CMakeCXXCompilerABI.cpp.obj' '-c']
+  ignore line: [ /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/bin/as --traditional-format --longcalls -o CMakeFiles/cmTC_7d6cc.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccxPz3I6.s]
   ignore line: [COMPILER_PATH=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/bin/]
   ignore line: [LIBRARY_PATH=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_727bd.dir/CMakeCXXCompilerABI.cpp.obj' '-c']
-  ignore line: [[2/2] Linking CXX executable cmTC_727bd]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'CMakeFiles/cmTC_7d6cc.dir/CMakeCXXCompilerABI.cpp.obj' '-c']
+  ignore line: [[2/2] Linking CXX executable cmTC_7d6cc]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/xtensa-lx106-elf-g++]
   ignore line: [COLLECT_LTO_WRAPPER=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/lto-wrapper]
@@ -324,20 +324,20 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 8.4.0 (crosstool-NG esp-2020r3-49-gd5524c1) ]
   ignore line: [COMPILER_PATH=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/bin/]
   ignore line: [LIBRARY_PATH=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/:/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-nostdlib' '-v' '-o' 'cmTC_727bd']
-  link line: [ /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/collect2 -plugin /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/liblto_plugin.so -plugin-opt=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYh6q52.res -o cmTC_727bd -L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0 -L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc -L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib --gc-sections CMakeFiles/cmTC_727bd.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-nostdlib' '-v' '-o' 'cmTC_7d6cc']
+  link line: [ /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/collect2 -plugin /home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/liblto_plugin.so -plugin-opt=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc7YXLsp.res -o cmTC_7d6cc -L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0 -L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc -L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib --gc-sections CMakeFiles/cmTC_7d6cc.dir/CMakeCXXCompilerABI.cpp.obj]
     arg [/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../libexec/gcc/xtensa-lx106-elf/8.4.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccYh6q52.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc7YXLsp.res] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_727bd] ==> ignore
+    arg [cmTC_7d6cc] ==> ignore
     arg [-L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0] ==> dir [/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0]
     arg [-L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc] ==> dir [/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc]
     arg [-L/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib] ==> dir [/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib]
     arg [--gc-sections] ==> ignore
-    arg [CMakeFiles/cmTC_727bd.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+    arg [CMakeFiles/cmTC_7d6cc.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
   collapse library dir [/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0] ==> [/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/lib/gcc/xtensa-lx106-elf/8.4.0]
   collapse library dir [/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc] ==> [/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/lib/gcc]
   collapse library dir [/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/bin/../lib/gcc/xtensa-lx106-elf/8.4.0/../../../../xtensa-lx106-elf/lib] ==> [/home/trex/.espressif/tools/xtensa-lx106-elf/esp-2020r3-49-gd5524c1-8.4.0/xtensa-lx106-elf/xtensa-lx106-elf/lib]

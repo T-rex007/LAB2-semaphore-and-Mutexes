@@ -15,78 +15,75 @@
 SemaphoreHandle_t xSemaphore;
 TaskHandle_t gpio_on_handle;
 TaskHandle_t gpio_off_handle;
-static const char *TAG = "main";
+TaskHandle_t print_status_handle;
+static const char *TAG = "Main";
+static const char *TAG_PRINT = "Status";
+static const char *TAG_OFF = "Off Task";
+static const char *TAG_ON = "On Task";
 
-#define GPIO_OUT_NUM0 0
+#define GPIO_OUT_NUM0 2
 #define GPIO_PIN_SEL 1ULL<<GPIO_OUT_NUM0
 
-/*
-void uHwTimerOnCallback(void *arg){
-    int static state =0; 
-    int time_after1;
-    gpio_set_level(GPIO_OUT_NUM0, (state++)%2);
-    time_after1 = hw_timer_get_count_data();
-    ESP_LOGI(TAG, "Time after %d",time_after1 );
-}
-*/
 
 static void uGpioOnTask(void *arg){
-    //int state=0; 
-    ESP_LOGI(TAG, "h1_on");
     TickType_t xtime1;
-    ESP_LOGI(TAG, "h1_on");
     for (;;){
         if (xSemaphore != NULL){
             if(xSemaphoreTake(xSemaphore, 10) ==pdTRUE){
                 xtime1 = xTaskGetTickCount();
                 gpio_set_level(GPIO_OUT_NUM0, 1);
-                ESP_LOGI(TAG, "ON");
                 while(pdMS_TO_TICKS(500)>(xTaskGetTickCount()- xtime1)){
                     continue;
                 }
-                vTaskDelay(1000/portTICK_RATE_MS);
                 xSemaphoreGive(xSemaphore);
+                vTaskDelay(1000/portTICK_RATE_MS);
             }
             else{
-                ESP_LOGI(TAG, "Another task has the Mutex");
+                ESP_LOGI(TAG_ON, "Another task has the Mutex");
             }
         }
         else{
-            ESP_LOGI(TAG, "Mutex was not created");
+            ESP_LOGI(TAG_ON, "Mutex was not created");
         }
-
     }
 }
 
 static void uGpioOffTask(void *arg){
-    ESP_LOGI(TAG, "h1_off");
-    //int state=0; 
     TickType_t xtime1;
-    ESP_LOGI(TAG, "h1_off");
     for (;;){
         if (xSemaphore != NULL){
             if(xSemaphoreTake(xSemaphore, 10) ==pdTRUE){
                 xtime1 = xTaskGetTickCount();
                 gpio_set_level(GPIO_OUT_NUM0, 0);
-                //ESP_LOGI(TAG, "")
-                ESP_LOGI(TAG, "Off");
-                while( pdMS_TO_TICKS(500)>xTaskGetTickCount()- xtime1){
+                while(pdMS_TO_TICKS(500)>xTaskGetTickCount()- xtime1){
                     continue;
                 }
-                //ESP_LOGI(TAG, "")
-                vTaskDelay(1000/portTICK_RATE_MS);
                 xSemaphoreGive(xSemaphore);
+                vTaskDelay(1000/portTICK_RATE_MS);
             }
             else{
-                ESP_LOGI(TAG, "Another task has the Mutex");
+                ESP_LOGI(TAG_OFF, "Another task has the Mutex.");
             }
         }
         else{
-            ESP_LOGI(TAG, "Mutex was not created");
+            ESP_LOGI(TAG_OFF, "Mutex was not created.");
         }
-
     }
 }
+
+static void printStatus( void *arg){
+    for (;;){
+        if(gpio_get_level(GPIO_OUT_NUM0) == 1){
+            ESP_LOGI(TAG_PRINT, "ON");
+            vTaskDelay(1000/portTICK_RATE_MS);
+        }
+        else{
+            ESP_LOGI(TAG_PRINT, "OFF");
+            vTaskDelay(1000/portTICK_RATE_MS);
+        }
+    }
+}
+
 
 void app_main(void){
     gpio_config_t io_conf; 
@@ -97,9 +94,11 @@ void app_main(void){
     io_conf.pull_up_en = 0;
     gpio_config(&io_conf);
     xSemaphore = xSemaphoreCreateMutex();
+    xTaskCreate(printStatus, "printStatus", 2048, NULL, 11, &print_status_handle);
     xTaskCreate(uGpioOnTask, "uGpioOnTask", 2048, NULL, 10, &gpio_on_handle);
-    xTaskCreate(uGpioOffTask, "uGpioOffTask", 2048, NULL, 10, &gpio_off_handle);
+    xTaskCreate(uGpioOffTask, "uGpioOffTask", 2048, NULL, 9, &gpio_off_handle);
     ESP_LOGI(TAG, "Setup is finished");
-    vTaskStartScheduler();
-    for(;;);
+    for(;;){
+        vTaskDelay(pdMS_TO_TICKS(10));
+    };
 }

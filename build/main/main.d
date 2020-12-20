@@ -128,3 +128,4 @@ main.o: /home/trex/esp/LAB2/main/main.c \
 /home/trex/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/queue.h:
 
 /home/trex/esp/ESP8266_RTOS_SDK/components/esp8266/include/driver/hw_timer.h:
+/home/trex/esp/LAB2/main/./main.c:
