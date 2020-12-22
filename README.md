@@ -20,7 +20,7 @@ For each exercise, ensure that the output file, the appropriately commented sour
 </ol>
 
 
-## IDLE Hoo function implementation
+## IDLE Hook function implementation
 
 
 <img src="image_evidence/SLEEP_EVIDENCE.png" alt="lab results" width="1000" height="600">

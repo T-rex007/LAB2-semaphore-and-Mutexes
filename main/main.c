@@ -21,6 +21,8 @@ static const char *TAG = "Main";
 static const char *TAG_PRINT = "Status";
 static const char *TAG_OFF = "Off Task";
 static const char *TAG_ON = "On Task";
+static const char *TAG_IDLE = "IDLE";
+static char cbuffer[512];
 
 #define GPIO_OUT_NUM0 2
 #define GPIO_PIN_SEL 1ULL<<GPIO_OUT_NUM0
@@ -90,6 +92,7 @@ void vApplicationIdleHook( void ){
     esp_sleep_enable_timer_wakeup(500); 
     esp_light_sleep_start();
 }
+
 void app_main(void){
     gpio_config_t io_conf; 
     io_conf.intr_type = GPIO_INTR_DISABLE;
@@ -103,6 +106,9 @@ void app_main(void){
     xTaskCreate(uGpioOnTask, "uGpioOnTask", 2048, NULL, 10, &gpio_on_handle);
     xTaskCreate(uGpioOffTask, "uGpioOffTask", 2048, NULL, 9, &gpio_off_handle);
     ESP_LOGI(TAG, "Setup is finished");
+    vTaskGetRunTimeStats(cbuffer);
+    printf(cbuffer);
+    
     for(;;){
         vTaskDelay(pdMS_TO_TICKS(10));
     };
