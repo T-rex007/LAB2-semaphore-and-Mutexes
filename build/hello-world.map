@@ -18959,74 +18959,74 @@ END GROUP
  *libcore.a:(.bss .bss.* COMMON)
  .bss.s_cpu_speed_up_nest
                 0x0000000040104548        0x2 /home/trex/esp/ESP8266_RTOS_SDK/components/esp8266/lib/libcore.a(user_interface.o)
- *libfreertos.a:stream_buffer.*(.bss .bss.* COMMON)
- *libfreertos.a:tasks.*(.bss .bss.* COMMON)
- *fill*         0x000000004010454a        0x2 
- .bss.ulTaskSwitchedInTime
-                0x000000004010454c        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
- .bss.uxSchedulerSuspended
-                0x0000000040104550        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
- .bss.xIdleTaskHandle
-                0x0000000040104554        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
- .bss.xNextTaskUnblockTime
-                0x0000000040104558        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
- .bss.uxTaskNumber
-                0x000000004010455c        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
- .bss.xNumOfOverflows
-                0x0000000040104560        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
- .bss.xYieldPending
-                0x0000000040104564        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
- .bss.uxPendedTicks
-                0x0000000040104568        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
- .bss.xSchedulerRunning
-                0x000000004010456c        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
- .bss.uxTopReadyPriority
-                0x0000000040104570        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
- .bss.xTickCount
-                0x0000000040104574        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
- .bss.uxCurrentNumberOfTasks
-                0x0000000040104578        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
- .bss.xSuspendedTaskList
-                0x000000004010457c       0x14 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
- .bss.uxDeletedTasksWaitingCleanUp
-                0x0000000040104590        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
- .bss.xTasksWaitingTermination
-                0x0000000040104594       0x14 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
- .bss.xPendingReadyList
-                0x00000000401045a8       0x14 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
- .bss.pxOverflowDelayedTaskList
-                0x00000000401045bc        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
- .bss.pxDelayedTaskList
-                0x00000000401045c0        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
- .bss.xDelayedTaskList2
-                0x00000000401045c4       0x14 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
- .bss.xDelayedTaskList1
-                0x00000000401045d8       0x14 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
- .bss.pxReadyTasksLists
-                0x00000000401045ec      0x12c /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
- .bss.pxCurrentTCB
-                0x0000000040104718        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
-                0x0000000040104718                pxCurrentTCB
- *libfreertos.a:event_groups.*(.bss .bss.* COMMON)
- *libfreertos.a:timers.*(.bss .bss.* COMMON)
- .bss.xLastTime$4366
-                0x000000004010471c        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(timers.o)
- .bss.xTimerTaskHandle
-                0x0000000040104720        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(timers.o)
- .bss.xTimerQueue
-                0x0000000040104724        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(timers.o)
- .bss.pxOverflowTimerList
-                0x0000000040104728        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(timers.o)
- .bss.pxCurrentTimerList
-                0x000000004010472c        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(timers.o)
- .bss.xActiveTimerList2
-                0x0000000040104730       0x14 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(timers.o)
- .bss.xActiveTimerList1
-                0x0000000040104744       0x14 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(timers.o)
  *libfreertos.a:list.*(.bss .bss.* COMMON)
- *libfreertos.a:queue.*(.bss .bss.* COMMON)
- *libfreertos.a:impure.*(.bss .bss.* COMMON)
+ *libfreertos.a:timers.*(.bss .bss.* COMMON)
+ *fill*         0x000000004010454a        0x2 
+ .bss.xLastTime$4366
+                0x000000004010454c        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(timers.o)
+ .bss.xTimerTaskHandle
+                0x0000000040104550        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(timers.o)
+ .bss.xTimerQueue
+                0x0000000040104554        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(timers.o)
+ .bss.pxOverflowTimerList
+                0x0000000040104558        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(timers.o)
+ .bss.pxCurrentTimerList
+                0x000000004010455c        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(timers.o)
+ .bss.xActiveTimerList2
+                0x0000000040104560       0x14 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(timers.o)
+ .bss.xActiveTimerList1
+                0x0000000040104574       0x14 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(timers.o)
  *libfreertos.a:freertos_hooks.*(.bss .bss.* COMMON)
+ *libfreertos.a:stream_buffer.*(.bss .bss.* COMMON)
+ *libfreertos.a:impure.*(.bss .bss.* COMMON)
+ *libfreertos.a:queue.*(.bss .bss.* COMMON)
+ *libfreertos.a:event_groups.*(.bss .bss.* COMMON)
+ *libfreertos.a:tasks.*(.bss .bss.* COMMON)
+ .bss.ulTaskSwitchedInTime
+                0x0000000040104588        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
+ .bss.uxSchedulerSuspended
+                0x000000004010458c        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
+ .bss.xIdleTaskHandle
+                0x0000000040104590        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
+ .bss.xNextTaskUnblockTime
+                0x0000000040104594        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
+ .bss.uxTaskNumber
+                0x0000000040104598        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
+ .bss.xNumOfOverflows
+                0x000000004010459c        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
+ .bss.xYieldPending
+                0x00000000401045a0        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
+ .bss.uxPendedTicks
+                0x00000000401045a4        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
+ .bss.xSchedulerRunning
+                0x00000000401045a8        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
+ .bss.uxTopReadyPriority
+                0x00000000401045ac        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
+ .bss.xTickCount
+                0x00000000401045b0        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
+ .bss.uxCurrentNumberOfTasks
+                0x00000000401045b4        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
+ .bss.xSuspendedTaskList
+                0x00000000401045b8       0x14 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
+ .bss.uxDeletedTasksWaitingCleanUp
+                0x00000000401045cc        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
+ .bss.xTasksWaitingTermination
+                0x00000000401045d0       0x14 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
+ .bss.xPendingReadyList
+                0x00000000401045e4       0x14 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
+ .bss.pxOverflowDelayedTaskList
+                0x00000000401045f8        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
+ .bss.pxDelayedTaskList
+                0x00000000401045fc        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
+ .bss.xDelayedTaskList2
+                0x0000000040104600       0x14 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
+ .bss.xDelayedTaskList1
+                0x0000000040104614       0x14 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
+ .bss.pxReadyTasksLists
+                0x0000000040104628      0x12c /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
+ .bss.pxCurrentTCB
+                0x0000000040104754        0x4 /home/trex/esp/LAB2_PART2B/build/freertos/libfreertos.a(tasks.o)
+                0x0000000040104754                pxCurrentTCB
  *liblwip.a:(.bss .bss.* COMMON)
                 0x0000000040104758                . = ALIGN (0x4)
                 0x0000000040104758                _iram_bss_end = ABSOLUTE (.)
@@ -19124,7 +19124,7 @@ END GROUP
 .dram0.bss      0x000000003ffe83e0      0xf68
                 0x000000003ffe83e0                . = ALIGN (0x8)
                 0x000000003ffe83e0                _bss_start = ABSOLUTE (.)
- *(EXCLUDE_FILE(*liblwip.a *libfreertos.a:stream_buffer.* *libfreertos.a:tasks.* *libfreertos.a:event_groups.* *libfreertos.a:timers.* *libfreertos.a:list.* *libfreertos.a:queue.* *libfreertos.a:impure.* *libfreertos.a:freertos_hooks.* *libcore.a) .bss EXCLUDE_FILE(*liblwip.a *libfreertos.a:stream_buffer.* *libfreertos.a:tasks.* *libfreertos.a:event_groups.* *libfreertos.a:timers.* *libfreertos.a:list.* *libfreertos.a:queue.* *libfreertos.a:impure.* *libfreertos.a:freertos_hooks.* *libcore.a) .bss.* EXCLUDE_FILE(*liblwip.a *libfreertos.a:stream_buffer.* *libfreertos.a:tasks.* *libfreertos.a:event_groups.* *libfreertos.a:timers.* *libfreertos.a:list.* *libfreertos.a:queue.* *libfreertos.a:impure.* *libfreertos.a:freertos_hooks.* *libcore.a) COMMON)
+ *(EXCLUDE_FILE(*liblwip.a *libfreertos.a:list.* *libfreertos.a:timers.* *libfreertos.a:freertos_hooks.* *libfreertos.a:stream_buffer.* *libfreertos.a:impure.* *libfreertos.a:queue.* *libfreertos.a:event_groups.* *libfreertos.a:tasks.* *libcore.a) .bss EXCLUDE_FILE(*liblwip.a *libfreertos.a:list.* *libfreertos.a:timers.* *libfreertos.a:freertos_hooks.* *libfreertos.a:stream_buffer.* *libfreertos.a:impure.* *libfreertos.a:queue.* *libfreertos.a:event_groups.* *libfreertos.a:tasks.* *libcore.a) .bss.* EXCLUDE_FILE(*liblwip.a *libfreertos.a:list.* *libfreertos.a:timers.* *libfreertos.a:freertos_hooks.* *libfreertos.a:stream_buffer.* *libfreertos.a:impure.* *libfreertos.a:queue.* *libfreertos.a:event_groups.* *libfreertos.a:tasks.* *libcore.a) COMMON)
  .bss.s_reset_reason
                 0x000000003ffe83e0        0x4 /home/trex/esp/LAB2_PART2B/build/esp8266/libesp8266.a(reset_reason.o)
  .bss.s_nmi_wd_state

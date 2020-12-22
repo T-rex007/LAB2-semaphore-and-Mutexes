@@ -1,0 +1,399 @@
+Test 1
+Checking Python dependencies...
+Python requirements from /home/trex/esp/ESP8266_RTOS_SDK/requirements.txt are satisfied.
+Executing action: monitor
+Running idf_monitor in directory /home/trex/esp/LAB2_PART2B
+Executing "/home/trex/.espressif/python_env/rtos3.4_py3.8_env/bin/python /home/trex/esp/ESP8266_RTOS_SDK/tools/idf_monitor.py -p /dev/ttyUSB0 -b 74880 /home/trex/esp/LAB2_PART2B/build/hello-world.elf -m '/home/trex/.espressif/python_env/rtos3.4_py3.8_env/bin/python' '/home/trex/esp/ESP8266_RTOS_SDK/tools/idf.py' '-p' '/dev/ttyUSB0'"...
+--- idf_monitor on /dev/ttyUSB0 74880 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+ ets Jan  8 2013,rst cause:1, boot mode:(3,6)
+
+load 0x40100000, len 7032, room 16 
+tail 8
+chksum 0x94
+load 0x3ffe8408, len 24, room 0 
+tail 8
+chksum 0x2d
+load 0x3ffe8420, len 3328, room 0 
+tail 0
+chksum 0x3d
+csum 0x3d
+I (43) boot: ESP-IDF v3.4-dev-383-gb921e0c3 2nd stage bootloader
+I (43) boot: compile time 05:19:40
+I (44) boot: SPI Speed      : 40MHz
+I (50) boot: SPI Mode       : DOUT
+I (56) boot: SPI Flash Size : 1MB
+I (63) boot: Partition Table:
+I (68) boot: ## Label            Usage          Type ST Offset   Length
+I (79) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (91) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (102) boot:  2 factory          factory app      00 00 00010000 000f0000
+I (114) boot: End of partition table
+I (120) esp_image: segment 0: paddr=0x00010010 vaddr=0x40210010 size=0x1469c ( 83612) map
+0x40210010: _stext at ??:?
+
+I (170) esp_image: segment 1: paddr=0x000246b4 vaddr=0x402246ac size=0x05798 ( 22424) map
+I (181) esp_image: segment 2: paddr=0x00029e54 vaddr=0x3ffe8000 size=0x003dc (   988) load
+I (182) esp_image: segment 3: paddr=0x0002a238 vaddr=0x40100000 size=0x00080 (   128) load
+I (195) esp_image: segment 4: paddr=0x0002a2c0 vaddr=0x40100080 size=0x044c8 ( 17608) load
+I (216) boot: Loaded app from partition at offset 0x10000
+I (242) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (253) Status: OFF
+I (1251) Status: OFF
+I (1255) Main: Setup is finished
+I (2751) Status: OFF
+I (4251) Status: OFF
+I (5751) Status: OFF
+I (7252) Status: OFF
+I (8752) Status: OFF
+I (10252) Status: OFF
+I (11752) Status: OFF
+I (13253) Status: OFF
+I (14753) Status: OFF
+I (16253) Status: OFF
+I (17753) Status: OFF
+I (19254) Status: OFF
+I (20754) Status: OFF
+I (22254) Status: OFF
+I (23754) Status: OFF
+I (25255) Status: OFF
+I (26755) Status: OFF
+I (28255) Status: OFF
+Test 2
+
+Checking Python dependencies...
+Python requirements from /home/trex/esp/ESP8266_RTOS_SDK/requirements.txt are satisfied.
+Executing action: monitor
+Running idf_monitor in directory /home/trex/esp/LAB2_PART2B
+Executing "/home/trex/.espressif/python_env/rtos3.4_py3.8_env/bin/python /home/trex/esp/ESP8266_RTOS_SDK/tools/idf_monitor.py -p /dev/ttyUSB0 -b 74880 /home/trex/esp/LAB2_PART2B/build/hello-world.elf -m '/home/trex/.espressif/python_env/rtos3.4_py3.8_env/bin/python' '/home/trex/esp/ESP8266_RTOS_SDK/tools/idf.py' '-p' '/dev/ttyUSB0'"...
+--- idf_monitor on /dev/ttyUSB0 74880 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+ ets Jan  8 2013,rst cause:1, boot mode:(3,6)
+
+load 0x40100000, len 7032, room 16 
+tail 8
+chksum 0x94
+load 0x3ffe8408, len 24, room 0 
+tail 8
+chksum 0x2d
+load 0x3ffe8420, len 3328, room 0 
+tail 0
+chksum 0x3d
+csum 0x3d
+I (43) boot: ESP-IDF v3.4-dev-383-gb921e0c3 2nd stage bootloader
+I (43) boot: compile time 05:19:40
+I (44) boot: SPI Speed      : 40MHz
+I (50) boot: SPI Mode       : DOUT
+I (56) boot: SPI Flash Size : 1MB
+I (63) boot: Partition Table:
+I (68) boot: ## Label            Usage          Type ST Offset   Length
+I (79) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (91) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (102) boot:  2 factory          factory app      00 00 00010000 000f0000
+I (114) boot: End of partition table
+I (120) esp_image: segment 0: paddr=0x00010010 vaddr=0x40210010 size=0x1469c ( 83612) map
+0x40210010: _stext at ??:?
+
+I (170) esp_image: segment 1: paddr=0x000246b4 vaddr=0x402246ac size=0x05798 ( 22424) map
+I (181) esp_image: segment 2: paddr=0x00029e54 vaddr=0x3ffe8000 size=0x003dc (   988) load
+I (182) esp_image: segment 3: paddr=0x0002a238 vaddr=0x40100000 size=0x00080 (   128) load
+I (195) esp_image: segment 4: paddr=0x0002a2c0 vaddr=0x40100080 size=0x044c8 ( 17608) load
+I (216) boot: Loaded app from partition at offset 0x10000
+I (242) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (253) Status: OFF
+I (1251) Status: OFF
+I (1255) Main: Setup is finished
+I (2751) Status: OFF
+I (4751) Status: ON
+I (6252) Status: ON
+I (7752) Status: ON
+I (9252) Status: ON
+I (10752) Status: ON
+I (12253) Status: ON
+I (13753) Status: ON
+I (15253) Status: ON
+I (16753) Status: ON
+I (18254) Status: ON
+I (19754) Status: ON
+I (21254) Status: ON
+I (22754) Status: ON
+I (24254) Status: ON
+I (25755) Status: ON
+I (27255) Status: ON
+I (28755) Status: ON
+I (30255) Status: ON
+I (31756) Status: ON
+I (33256) Status: ON
+I (34756) Status: ON
+I (36256) Status: ON
+I (37757) Status: ON
+I (39257) Status: ON
+I (40757) Status: ON
+I (42257) Status: ON
+I (43758) Status: ON
+I (45258) Status: ON
+I (46758) Status: ON
+I (48258) Status: ON
+I (49759) Status: ON
+I (51259) Status: ON
+I (52759) Status: ON
+
+Test 3
+Checking Python dependencies...
+Python requirements from /home/trex/esp/ESP8266_RTOS_SDK/requirements.txt are satisfied.
+Executing action: monitor
+Running idf_monitor in directory /home/trex/esp/LAB2_PART2B
+Executing "/home/trex/.espressif/python_env/rtos3.4_py3.8_env/bin/python /home/trex/esp/ESP8266_RTOS_SDK/tools/idf_monitor.py -p /dev/ttyUSB0 -b 74880 /home/trex/esp/LAB2_PART2B/build/hello-world.elf -m '/home/trex/.espressif/python_env/rtos3.4_py3.8_env/bin/python' '/home/trex/esp/ESP8266_RTOS_SDK/tools/idf.py' '-p' '/dev/ttyUSB0'"...
+--- idf_monitor on /dev/ttyUSB0 74880 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+ ets Jan  8 2013,rst cause:1, boot mode:(3,6)
+
+load 0x40100000, len 7032, room 16 
+tail 8
+chksum 0x94
+load 0x3ffe8408, len 24, room 0 
+tail 8
+chksum 0x2d
+load 0x3ffe8420, len 3328, room 0 
+tail 0
+chksum 0x3d
+csum 0x3d
+I (43) boot: ESP-IDF v3.4-dev-383-gb921e0c3 2nd stage bootloader
+I (43) boot: compile time 05:19:40
+I (44) boot: SPI Speed      : 40MHz
+I (50) boot: SPI Mode       : DOUT
+I (56) boot: SPI Flash Size : 1MB
+I (63) boot: Partition Table:
+I (68) boot: ## Label            Usage          Type ST Offset   Length
+I (79) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (91) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (102) boot:  2 factory          factory app      00 00 00010000 000f0000
+I (114) boot: End of partition table
+I (120) esp_image: segment 0: paddr=0x00010010 vaddr=0x40210010 size=0x1469c ( 83612) map
+0x40210010: _stext at ??:?
+
+I (170) esp_image: segment 1: paddr=0x000246b4 vaddr=0x402246ac size=0x05798 ( 22424) map
+I (181) esp_image: segment 2: paddr=0x00029e54 vaddr=0x3ffe8000 size=0x003dc (   988) load
+I (182) esp_image: segment 3: paddr=0x0002a238 vaddr=0x40100000 size=0x00080 (   128) load
+I (195) esp_image: segment 4: paddr=0x0002a2c0 vaddr=0x40100080 size=0x044c8 ( 17608) load
+I (216) boot: Loaded app from partition at offset 0x10000
+I (242) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (253) Status: OFF
+I (1251) Status: OFF
+I (1255) Main: Setup is finished
+I (2751) Status: OFF
+I (4251) Status: OFF
+I (5751) Status: OFF
+I (7252) Status: OFF
+I (8752) Status: OFF
+I (10252) Status: OFF
+I (11752) Status: OFF
+I (13253) Status: OFF
+I (14753) Status: OFF
+I (16253) Status: OFF
+I (17753) Status: OFF
+I (19254) Status: OFF
+I (20754) Status: OFF
+I (22254) Status: OFF
+I (23754) Status: OFF
+I (25255) Status: OFF
+I (26755) Status: OFF
+I (28255) Status: OFF
+I (29755) Status: OFF
+I (31256) Status: OFF
+I (32756) Status: OFF
+I (34256) Status: OFF
+I (35756) Status: OFF
+I (37257) Status: OFF
+I (38757) Status: OFF
+I (40257) Status: OFF
+I (41757) Status: OFF
+I (43258) Status: OFF
+I (44758) Status: OFF
+I (46258) Status: OFF
+I (47758) Status: OFF
+
+Test 4
+
+Checking Python dependencies...
+Python requirements from /home/trex/esp/ESP8266_RTOS_SDK/requirements.txt are satisfied.
+Executing action: monitor
+Running idf_monitor in directory /home/trex/esp/LAB2_PART2B
+Executing "/home/trex/.espressif/python_env/rtos3.4_py3.8_env/bin/python /home/trex/esp/ESP8266_RTOS_SDK/tools/idf_monitor.py -p /dev/ttyUSB0 -b 74880 /home/trex/esp/LAB2_PART2B/build/hello-world.elf -m '/home/trex/.espressif/python_env/rtos3.4_py3.8_env/bin/python' '/home/trex/esp/ESP8266_RTOS_SDK/tools/idf.py' '-p' '/dev/ttyUSB0'"...
+--- idf_monitor on /dev/ttyUSB0 74880 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+ ets Jan  8 2013,rst cause:1, boot mode:(3,6)
+
+load 0x40100000, len 7032, room 16 
+tail 8
+chksum 0x94
+load 0x3ffe8408, len 24, room 0 
+tail 8
+chksum 0x2d
+load 0x3ffe8420, len 3328, room 0 
+tail 0
+chksum 0x3d
+csum 0x3d
+I (43) boot: ESP-IDF v3.4-dev-383-gb921e0c3 2nd stage bootloader
+I (43) boot: compile time 05:19:40
+I (44) boot: SPI Speed      : 40MHz
+I (50) boot: SPI Mode       : DOUT
+I (56) boot: SPI Flash Size : 1MB
+I (63) boot: Partition Table:
+I (68) boot: ## Label            Usage          Type ST Offset   Length
+I (79) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (91) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (102) boot:  2 factory          factory app      00 00 00010000 000f0000
+I (114) boot: End of partition table
+I (120) esp_image: segment 0: paddr=0x00010010 vaddr=0x40210010 size=0x1469c ( 83612) map
+0x40210010: _stext at ??:?
+
+I (170) esp_image: segment 1: paddr=0x000246b4 vaddr=0x402246ac size=0x05798 ( 22424) map
+I (181) esp_image: segment 2: paddr=0x00029e54 vaddr=0x3ffe8000 size=0x003dc (   988) load
+I (182) esp_image: segment 3: paddr=0x0002a238 vaddr=0x40100000 size=0x00080 (   128) load
+I (195) esp_image: segment 4: paddr=0x0002a2c0 vaddr=0x40100080 size=0x044c8 ( 17608) load
+I (216) boot: Loaded app from partition at offset 0x10000
+I (242) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (253) Status: OFF
+I (1251) Status: OFF
+I (1255) Main: Setup is finished
+I (2251) Status: ON
+I (3251) Status: OFF
+I (4251) Status: OFF
+I (5251) Status: ON
+I (6252) Status: ON
+I (7252) Status: OFF
+I (8252) Status: ON
+I (9252) Status: ON
+I (10252) Status: OFF
+I (11252) Status: ON
+I (12253) Status: ON
+I (13253) Status: OFF
+I (14253) Status: ON
+I (15253) Status: ON
+I (16253) Status: OFF
+I (17253) Status: ON
+I (18254) Status: ON
+
+Test 5
+
+Checking Python dependencies...
+Python requirements from /home/trex/esp/ESP8266_RTOS_SDK/requirements.txt are satisfied.
+Executing action: monitor
+Running idf_monitor in directory /home/trex/esp/LAB2_PART2B
+Executing "/home/trex/.espressif/python_env/rtos3.4_py3.8_env/bin/python /home/trex/esp/ESP8266_RTOS_SDK/tools/idf_monitor.py -p /dev/ttyUSB0 -b 74880 /home/trex/esp/LAB2_PART2B/build/hello-world.elf -m '/home/trex/.espressif/python_env/rtos3.4_py3.8_env/bin/python' '/home/trex/esp/ESP8266_RTOS_SDK/tools/idf.py' '-p' '/dev/ttyUSB0'"...
+--- idf_monitor on /dev/ttyUSB0 74880 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+
+ ets Jan  8 2013,rst cause:1, boot mode:(3,6)
+
+load 0x40100000, len 7032, room 16 
+tail 8
+chksum 0x94
+load 0x3ffe8408, len 24, room 0 
+tail 8
+chksum 0x2d
+load 0x3ffe8420, len 3328, room 0 
+tail 0
+chksum 0x3d
+csum 0x3d
+I (43) boot: ESP-IDF v3.4-dev-383-gb921e0c3 2nd stage bootloader
+I (43) boot: compile time 05:19:40
+I (44) boot: SPI Speed      : 40MHz
+I (50) boot: SPI Mode       : DOUT
+I (56) boot: SPI Flash Size : 1MB
+I (63) boot: Partition Table:
+I (68) boot: ## Label            Usage          Type ST Offset   Length
+I (79) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (91) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (102) boot:  2 factory          factory app      00 00 00010000 000f0000
+I (114) boot: End of partition table
+I (120) esp_image: segment 0: paddr=0x00010010 vaddr=0x40210010 size=0x1469c ( 83612) map
+0x40210010: _stext at ??:?
+
+I (170) esp_image: segment 1: paddr=0x000246b4 vaddr=0x402246ac size=0x05798 ( 22424) map
+I (181) esp_image: segment 2: paddr=0x00029e54 vaddr=0x3ffe8000 size=0x003dc (   988) load
+I (182) esp_image: segment 3: paddr=0x0002a238 vaddr=0x40100000 size=0x00080 (   128) load
+I (195) esp_image: segment 4: paddr=0x0002a2c0 vaddr=0x40100080 size=0x044c8 ( 17608) load
+I (216) boot: Loaded app from partition at offset 0x10000
+I (242) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (253) Status: OFF
+I (1251) Status: OFF
+I (1255) Main: Setup is finished
+I (2251) Status: ON
+I (3251) Status: OFF
+I (4251) Status: OFF
+I (5251) Status: ON
+I (6252) Status: OFF
+I (7252) Status: OFF
+I (8252) Status: ON
+I (9252) Status: OFF
+I (10252) Status: OFF
+I (11252) Status: ON
+I (12253) Status: OFF
+I (13253) Status: OFF
+I (14253) Status: ON
+
+Test 6
+
+Checking Python dependencies...
+Python requirements from /home/trex/esp/ESP8266_RTOS_SDK/requirements.txt are satisfied.
+Executing action: monitor
+Running idf_monitor in directory /home/trex/esp/LAB2_PART2B
+Executing "/home/trex/.espressif/python_env/rtos3.4_py3.8_env/bin/python /home/trex/esp/ESP8266_RTOS_SDK/tools/idf_monitor.py -p /dev/ttyUSB0 -b 74880 /home/trex/esp/LAB2_PART2B/build/hello-world.elf -m '/home/trex/.espressif/python_env/rtos3.4_py3.8_env/bin/python' '/home/trex/esp/ESP8266_RTOS_SDK/tools/idf.py' '-p' '/dev/ttyUSB0'"...
+--- idf_monitor on /dev/ttyUSB0 74880 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+ ets Jan  8 2013,rst cause:1, boot mode:(3,6)
+
+load 0x40100000, len 7032, room 16 
+tail 8
+chksum 0x94
+load 0x3ffe8408, len 24, room 0 
+tail 8
+chksum 0x2d
+load 0x3ffe8420, len 3328, room 0 
+tail 0
+chksum 0x3d
+csum 0x3d
+I (43) boot: ESP-IDF v3.4-dev-383-gb921e0c3 2nd stage bootloader
+I (43) boot: compile time 05:19:40
+I (44) boot: SPI Speed      : 40MHz
+I (50) boot: SPI Mode       : DOUT
+I (56) boot: SPI Flash Size : 1MB
+I (63) boot: Partition Table:
+I (68) boot: ## Label            Usage          Type ST Offset   Length
+I (79) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (91) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (102) boot:  2 factory          factory app      00 00 00010000 000f0000
+I (114) boot: End of partition table
+I (120) esp_image: segment 0: paddr=0x00010010 vaddr=0x40210010 size=0x1469c ( 83612) map
+0x40210010: _stext at ??:?
+
+I (170) esp_image: segment 1: paddr=0x000246b4 vaddr=0x402246ac size=0x05798 ( 22424) map
+I (181) esp_image: segment 2: paddr=0x00029e54 vaddr=0x3ffe8000 size=0x003dc (   988) load
+I (182) esp_image: segment 3: paddr=0x0002a238 vaddr=0x40100000 size=0x00080 (   128) load
+I (195) esp_image: segment 4: paddr=0x0002a2c0 vaddr=0x40100080 size=0x044c8 ( 17608) load
+I (216) boot: Loaded app from partition at offset 0x10000
+I (242) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (253) Status: OFF
+I (1251) Status: OFF
+I (1255) Main: Setup is finished
+I (2251) Status: ON
+I (3751) Status: ON
+I (5251) Status: ON
+I (6752) Status: ON
+I (8252) Status: ON
+I (9752) Status: ON
+I (11252) Status: ON
+I (12753) Status: ON
+I (14253) Status: ON
+I (15753) Status: ON
+I (17253) Status: ON
+I (18754) Status: ON
+I (20254) Status: ON
+I (21754) Status: ON
+I (23254) Status: ON
+I (24755) Status: ON
+I (26255) Status: ON
+I (27755) Status: ON
+I (29255) Status: ON
